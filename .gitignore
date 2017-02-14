@@ -2,3 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+/src/*.o
+/src/*.o-*
+/src/*.d
+/src/*.so
+*.dll
+inst/doc
+.httr-oauth
+vignettes/*.R
+.DS_Store
+/.idea
