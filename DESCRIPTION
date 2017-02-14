@@ -1,11 +1,47 @@
 Package: easyRNAseq
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: easyRNAseq: wrapper for easy RNASeq analysis
+numeric_version("0.1") == numeric_version("0.1.0")
+Authors@R: person("Kishore","R.", "Anekalla", email = "kishorereddyanekalla@gmail.com",
+  role = c("aut", "cre"))
+URL: https://github.com/kanekalla/easyRNAseq
+BugReports: https://github.com/kanekalla/easyRNAseq/issues
+
+Description: Basic quality metrics, general query,DE analysis and easy visualization for rnaseq data 
+License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+LinkingTo: Rcpp (>= 0.12.0),
+    BH (>= 1.58.0-1),
+    bindrcpp,
+    plogr
+Imports: 
+    methods,
+    assertthat,
+    bindrcpp,
+    utils,
+    R6,
+    Rcpp (>= 0.12.3),
+    tibble,
+    magrittr,
+    lazyeval (>= 0.1.10),
+    DBI (>= 0.5)
+Suggests: 
+    RSQLite (>= 1.0.0),
+    RMySQL,
+    RPostgreSQL,
+    testthat,
+    knitr,
+    microbenchmark,
+    ggplot2,
+    mgcv,
+    Lahman (>= 3.0-1),
+    nycflights13,
+    rmarkdown,
+    covr,
+    dtplyr
+
+Collate: 
+    'test.R'
